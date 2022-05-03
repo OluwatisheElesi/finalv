@@ -1,0 +1,292 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: auto;
+}
+
+@font-face {
+  font-family: "SemiBold Italic";
+  src: url(fonts//GillSansReg.ttc);
+}
+.nav-wrapper {
+  background-color: none;
+  height: 80px;
+  width: 100%;
+}
+
+@media only all and (max-height: 50px) {
+  .nav-wrapper nav {
+    position: left;
+    padding: 0 30px;
+  }
+}
+@media only all and (max-width: 980px) {
+  .nav-wrapper nav {
+    padding: 0 30px;
+  }
+}
+nav {
+  position: relative;
+  max-width: 980px;
+  /*r do a width of 70%*/
+  height: 100px;
+  background-color: white;
+  margin: 0 auto;
+  border-bottom: solid 2px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  position: relative;
+  width: 69px;
+  height: 30px;
+  border: solid 2px black;
+}
+
+nav .logo span {
+  position: relative;
+  bottom: -6px;
+  width: 80px;
+  color: black;
+  font-size: 20px;
+  font-weight: 20px;
+}
+
+nav .links {
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .links span a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .links span {
+  color: #79addc;
+}
+
+@media only all and (max-height: 50px) {
+  .nav-wrapper nav {
+    position: left;
+    padding: 0 30px;
+  }
+
+  .nav-wrapper nav .links {
+    display: none;
+  }
+}
+@media only all and (max-width: 980px) {
+  .nav-wrapper nav {
+    padding: 0 30px;
+  }
+
+  .nav-wrapper nav .links {
+    display: none;
+  }
+}
+.button {
+  background-color: #79addc;
+  color: white;
+  font-weight: 25px;
+  border-radius: 20px;
+  height: 40px;
+  width: 133px;
+  border-color: #79addc;
+  position: relative;
+  left: 170px;
+  bottom: -55px;
+  text-align: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.hero1 {
+  max-width: 199px;
+  height: 287px;
+  background-image: linear-gradient(to bottom, rgba(255, 210, 64, 0), rgba(255, 210, 64, 0)), url(../images/special-offer-01.jpg);
+  margin: 0 auto;
+  position: relative;
+  bottom: -25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  left: -390px;
+  padding: 40px;
+}
+
+.hero1 .hero-title p {
+  position: relative;
+  width: 200px;
+  font-size: 18px;
+  font-style: bold;
+  text-align: center;
+  bottom: 30px;
+  left: 180px;
+}
+
+.hero2 {
+  max-width: 199px;
+  height: 287px;
+  background-image: linear-gradient(to bottom, rgba(255, 210, 64, 0), rgba(255, 210, 64, 0)), url(../images/special-offer-02.jpg);
+  margin: 0 auto;
+  position: relative;
+  bottom: -80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  left: -390px;
+  padding-top: 40px;
+}
+
+.hero2 .hero-title p {
+  position: relative;
+  width: 250px;
+  font-size: 18px;
+  font-style: bold;
+  text-align: center;
+  bottom: 30px;
+  left: 200px;
+}
+
+.hero1 .hero-title span {
+  font-size: 12px;
+  position: relative;
+  bottom: -15px;
+  text-align: center;
+}
+
+.hero {
+  height: 200px;
+  padding: 30px;
+}
+
+.work {
+  color: black;
+  width: 300px;
+  position: relative;
+  left: -100px;
+  bottom: 540px;
+}
+
+.work1 {
+  color: black;
+  width: 300px;
+  position: relative;
+  left: -100px;
+  bottom: 190px;
+}
+
+footer {
+  /*maxwidth allows for a responsive screen*/
+  max-width: 100%;
+  font-size: 16px;
+  font-weight: "Ultra Bold" "Regular Italic";
+  height: 100px;
+  margin: 0 auto;
+  background-color: #79addc;
+  bottom: -100px;
+  position: relative;
+}
+
+.words {
+  border-bottom: black;
+  position: relative;
+  width: 109px;
+  height: 42px;
+  border: solid 2px white;
+  left: 30px;
+  bottom: -30px;
+}
+
+.words span {
+  color: white;
+  display: flex;
+  position: relative;
+  left: 10px;
+  bottom: -10px;
+  width: 130px;
+}
+
+footer .fa {
+  padding: 11px;
+  font-size: 12px;
+  max-width: 35px;
+  text-align: center;
+  justify-items: space-around;
+  border-radius: 25%;
+}
+
+footer .fa .fa:hover {
+  opacity: 1;
+  justify-content: space-evenly;
+  position: relative;
+  width: 35px;
+}
+
+footer .fa .fa-facebook {
+  background: white;
+  color: #79addc;
+  position: relative;
+  bottom: 44px;
+  left: 1220px;
+}
+
+footer .fa .fa-instagram {
+  background: white;
+  color: #79addc;
+  position: relative;
+  bottom: 77px;
+  left: 1262px;
+}
+
+footer .fa .fa-twitter {
+  background: white;
+  color: #79addc;
+  position: relative;
+  bottom: 110px;
+  left: 1306px;
+}
+
+footer .Copyright {
+  color: white;
+  position: relative;
+  bottom: 100px;
+  left: 580px;
+  width: 500px;
+  background-color: #79addc;
+}
+
+@media (max-width: 980px) {
+  footer {
+    flex-wrap: wrap;
+    /*if you wantit t in a column as t hte site gets smaller*/
+    width: 80%;
+    margin: top left auto;
+    padding: 80px;
+  }
+}
