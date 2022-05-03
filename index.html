@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Visual</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Norican" rel="stylesheet" />
+    <link rel="preconnect" href="https://www.google.com">
+<link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="app.css"/>
+    <script src="d3.v5.js"></script>
+    
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <style>
+      .chart :hover{
+        font: 14px sans-serif;
+      background-color: rgb(255, 0, 170);
+        text-align: right;
+        padding: 3px;
+        margin: 1px;
+        color: white;
+        size: larger;
+        height:50px;
+      }
+
+       .chart{
+        border: solid 5px black;
+        background-color: rgba(240, 248, 255, 0);
+            margin: 0 auto;
+            border-radius: 10px;
+
+    width: 450px;height:auto;
+    padding:30% left;
+    position: relative;
+    margin: 0 auto;
+    left: 146px;
+       }
+
+       #level {
+        bottom: 900px;
+        left: 250px;
+        display: space;
+  justify-content: space-between;
+      }
+      .l {
+        padding-top:100px;
+        position: relative;
+        width: 30px;
+        margin-left: 50px;
+      }
+
+       .m {
+        padding-top:150px;
+        position: relative;
+        width: 30px;
+        margin-left: 50px;
+      }
+      .s {
+        padding-top:50px;
+        position: relative;
+        width: 30px;
+        margin-left: 50px;
+      }
+
+#level1 {
+  bottom: 820px;
+  left: 350px;
+}
+
+#level3 {
+  bottom: 300px;
+  left:620px;
+padding-top: 13px;
+}
+
+#level2 {
+  
+  bottom: 520px;
+  padding-left: 250px;
+  position:relative; 
+ writing-mode: vertical-rl;
+}
+.axis  {
+  bottom:344px;
+  position: relative;
+  left: 1300px;
+  width: 400px;
+  height: 10px;
+}
+  .l1 {
+      width:50%;
+     bottom: -270px;position: relative;
+     display: space; padding-left:120px;;}
+    .l3 {
+     width:50%;
+    bottom: -460px;position: relative;
+    display: space;
+    justify-content: space-evenly;
+ } 
+ .l2 {
+   width:50%;
+  bottom: 255px;
+  position: relative;
+  display: space;
+  justify-content: space-evenly;
+}
+    </style>
+    <script>
+      
+      const onloadCallback = function(main) {
+        console.log("reCAPTCHA has loaded!");
+        grecaptcha.reset();
+      };
+    </script>
+   
+      <script async src="https://www.google.com/recaptcha/api.js">
+    </script>
+    <script>
+      function onSubmit(main) {
+        document.getElementById("demo-form").submit();
+      }</script>
+      <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(main) {
+      const canvas = d3.select("canva");
+      const dataArray = [4,15,34,54];
+      const svg = canvas.append("svg")
+      
+      .attr("width", 600)
+      .attr("height",400)
+      .attr("fill","orange");
+
+      svg.attr("width", "500")
+      .attr("height","400");
+
+      const rect = svg.select("rect");
+     
+      
+      rect.attr("color","green")
+      .attr("width","450") 
+      .attr("height",400)
+      .data(dataArray)
+
+      .attr("x", function(d,i){
+        console.log(d);
+        return i*24;
+      })
+      .attr("y", function(d,i) {
+        return 100 -(d*2);
+      })
+
+      var data = [120978,
+      47610,
+      243164,
+      57502,
+      122572,
+      83982,
+      85000,
+      41063,
+      134465,
+      96285,
+      239729,
+      75148];
+//if the code breaks, change d3.scale.Linear() or d3.scale.linear()
+var x = d3.scale.linear()
+    .domain([0, d3.max(data)])
+    .range([0, 420]);
+
+d3.select(".chart")
+    .selectAll("div")
+    .data(data)
+    .enter().append("div")
+    .style("width", function(d) { return x(d) + "px"; })
+    .text(function(d) { return d; });
+      console.log(rect); 
+      });
+    </script>
+    
+</head>
+<body >
+  <div class="nav">
+    <nav>
+      <div class="title">
+        <span class="titles">Salaries of Data Science Jobs </span>
+      </div>
+      <ul>
+        <div class="links"><br><br>
+          <link><a href="index.html">Graph1
+            <span> | </span>
+            <a href="about.html">About
+            <span> | </span>
+            <a href="graph1.html">Graph2
+            <span> | </span>
+          </a></link>
+      </ul>
+    </nav></div>
+</div>
+<br> 
+<br>
+<div id="container1">
+    <h1 class="title2">This site is meant to show the user the corrilation of salaries of various different "data" jobs </h1>
+    <br>
+   <div>
+    <button class="btn">
+      <a href="https://github.com/OluwatisheElesi/VisualFinal" target="_blank">Go to Github</a> </button>
+    <button class="btn">
+      <a href="https://docs.google.com/document/d/1_c6Cci0oShz2NkpPAqUGO9JlmHk51xzJvUhcQHJ15zM/edit?usp=sharing" target="_blank">View Google Doc </a> </button>
+    <button class="btn">
+      <a href="https://youtu.be/fIsGrXHqVPg" target="_blank">Go to Youtube</a> </button>
+   </div>
+</div>   
+
+
+       
+      <div onload="main()" id="tootip" >
+       
+        <svg class="bar">
+          <line class="axis" x1="420"  x2="20"  y2="800" y1="500"  width="500" height="1800px" stroke="blue" ></line>
+          <hr class="l1"align="left" width="800px" stroke=" black">
+          <hr class="l2" align="left" width="800px" stroke=" black"> <hr class="l3" align="left" width="800px" stroke=" black">
+     
+      <div class="chart" height="500px" id="tooltip"> 
+  
+
+  
+</svg>  </div>  <text><p id="level1"><span><strong>Average Salary earened at different company sizes by Employee's Level of Experience</strong></span> </p>
+<text><p id="level2" x="50" y="500"><span>Company Size</span> </p></text>
+<text><p id="level3"><span>Average Salary USD</span> </p></text> 
+
+<text><p id="level" class="s" stroke="black"><span>Small</span> </p></text>
+<text><p id="level" class="m"><span>Medium</span> </p></text>
+<text><p id="level" class="l"><span>Large</span> </p></text>
+
+
+</text></div>
+
+        <br>
+        <footer>
+         <span class="Copyright">Created By Oluwatishe Elesinnla 2022.</span> 
+        </footer>
+
+
+</body>
+<script src="app.js"></script>  
+
+</html> 

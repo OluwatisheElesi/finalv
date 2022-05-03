@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Visual</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Norican" rel="stylesheet" />
+    <link rel="preconnect" href="https://www.google.com">
+<link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="app.css"/>
+    <script src="d3.v5.js"></script>
+    
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+     <style>
+       .font{
+        position:relative; left:-130px;bottom:420px;width:20px;
+       }
+       svg {
+        border: solid 3px black;
+        background-color: aliceblue;
+            margin: 0 auto;
+             
+      } 
+     </style>
+ 
+      
+     
+    <!-- <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCZNS_zbk6dD8uMumDUrMd5oDbcWNQAimk",
+        authDomain: "cornergames-16131.firebaseapp.com",
+        databaseURL: "https://cornergames-16131-default-rtdb.firebaseio.com",
+        projectId: "cornergames-16131",
+        storageBucket: "cornergames-16131.appspot.com",
+        messagingSenderId: "258607400438",
+        appId: "1:258607400438:web:87cff0cbd646a4f6a4b3d7",
+        measurementId: "G-85WL9HY2GP"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>  -->
+    
+    <!-- <script>
+     -->
+      
+    <!-- </script>  -->
+</head>
+<body onload="main()">
+  <div class="nav">
+    <nav>
+      <div class="title">
+        <span class="titles">Salaries of Data Science Jobs </span>
+      </div>
+      <ul>
+        <div class="links"><br><br>
+          <link><a href="index.html">Graph1
+            <span> | </span>
+            <a href="about.html">About
+            <span> | </span>
+            <a href="graph1.html">Graph2
+            <span> | </span>
+          </a></link>
+      </ul>
+    </nav></div>
+</div>
+<br> 
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<div>
+  <button class="btn">
+    <a href="https://github.com/OluwatisheElesi/VisualFinal" target="_blank">Go to Github</a> </button>
+  <button class="btn">
+    <a href="https://docs.google.com/document/d/1_c6Cci0oShz2NkpPAqUGO9JlmHk51xzJvUhcQHJ15zM/edit?usp=sharing" target="_blank">View Google Doc </a> </button>
+  <button class="btn">
+    <a href="https://youtu.be/fIsGrXHqVPg" target="_blank">Go to Youtube</a> </button>
+ </div>
+</div>    
+
+
+<div >
+  <p><span><strong> Average Salary in US Dollars by Experience Level</strong></span> </p>
+</div>
+
+<svg class="bar"  width="500" height="400">
+        <rect class="bar" x="220"  y="50" width="50" height="420"    stroke="black"></rect>
+        <rect class="bar"  x="140"  y="300"  width="50" height="450" stroke="black""></rect>
+       
+        <rect class="bar" id="rect" x="300"  y="260"  width="50" height="280"   stroke="black"></rect>
+        <rect class="bar" x="380"  y="197"  width="50" height="260"   stroke="black"></rect> 
+
+        <!-- <line  x1="120"  x2="440"  y2="270" y1="270"  width="500" height="400" stroke="black"></line> -->
+        <line  x1="120"  x2="120"  y2="400" y1="10"  width="500" height="400" stroke="black"></line>
+        
+        <text  x="150" y="330" style="font-size: 14px"> EN</text>
+        <text x="233" y="300" style="font-size: 14px"> EX</text>
+        <text x="316" y="300" style="font-size: 14px"> MI</text>
+        <text x="400" y="300" style="font-size: 14px"> SE</text>
+        
+        <text x="80" y="390" style="font-size: 14px">$0</text>
+        <text x="45" y="330" style="font-size: 14px">$50,000</text>
+        <text x="40" y="250" style="font-size: 14px">$100,000</text>
+        <text x="40" y="170" style="font-size: 14px">$150,000</text>
+        <text x="40" y="90" style="font-size: 14px">$200,000</text>
+        <text x="40" y="30" style="font-size: 14px">$250,000</text> 
+        <text><p id="level"><span>Level of Experience</span></p>
+          <p class="font"><span  style=" writing-mode: vertical-lr;">Earned Salary in US Dollars</span></p></text>
+       
+    
+    </svg>
+
+    <p>This site will look at</p>
+        <br>
+        <footer class="one">
+         <span class="Copyright">Created By Oluwatishe Elesinnla 2022.</span> 
+        </footer>
+      
+</body>
+<script src="app.js"></script>
+</html>
