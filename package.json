@@ -1,5 +1,30 @@
 {
   "dependencies": {
-    "firebase": "^9.7.0"
-  }
+    "firebase": "^9.7.0",
+    "gh": "^2.8.9",
+    "pages": "^0.0.16"
+  },
+  "name": "finalv",
+  "description": "will have 3 links",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {
+    "coffee-script": "^1.6.3",
+    "gh-pages": "^3.2.3",
+    "mocha": "^10.0.0"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OluwatisheElesi/finalv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OluwatisheElesi/finalv/issues"
+  },
+  "homepage": "https://OluwatisheElesi.github.io/finalv"
 }
